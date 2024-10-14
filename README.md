@@ -1,2 +1,3 @@
 # TangoExercise
- -- create a function that will read from the api data and get data from one page to an other and after reading each page put it inside a List.
+ -- The first function is using a real API to get data from stock site, decided to make it for showing a real exemple like that.
+ -- the second item is taking the exemple as base exemple to continue answer the question.
