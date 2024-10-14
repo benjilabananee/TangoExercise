@@ -9,8 +9,6 @@ BASE_URL = f"{c.stock_data_news}&apiKey={c.api_key}&published_utc.gt={NEWS_FROM_
 STOCKS_FOR_INVESTIGATION = c.stocks_for_investigation.split(',')
 MAX_REQUESTS_PER_MINUTE = 5
 
-result_data = []
-
 params = {
     "adjusted": "true",
     "apiKey": c.api_key
@@ -20,6 +18,8 @@ params = {
 
 def fetch_data(url: str) -> str:   
     while url:
+        
+        result_data = []
         request_count = 0
 
         #there is a linitation of 1000 
